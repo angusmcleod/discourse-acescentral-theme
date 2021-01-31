@@ -1,0 +1,163 @@
+<!--
+<link href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;>
+
+
+
+<div class="w-nav navbar" style="position: relative; width: 100%;background-color: #343434; height: 62px;" data-collapse="small" data-animation="default" data-duration="400">
+    <div class="w-container" style="margin-left: auto; margin-right: auto; max-width: 1110px;">
+      <a class="w-nav-brand w-clearfix logo" href="http://community.acescentral.com/" style="padding-top: 11px;padding-bottom: 7px;float: left;">
+          <img class="w-editable logoimage"  style="vertical-align: middle" 
+                src="http://community.acescentral.com/uploads/default/original/1X/a450f2875e99c2ec9642de570f8f05508ade54a8.png" 
+                height="40">
+      </a>
+      <nav class="w-nav-menu nav-menu" role="navigation" style="text-align: right;float: right; margin-top: 20px;">
+                    <a style="max-width: 1110px; margin-right:30px;" class="w-nav-link navlink" href="http://www.oscars.org/science-technology/sci-tech-projects/aces/">ACES Website</a>
+          <a style="max-width: 1110px; margin-right:30px;" class="w-nav-link navlink" title="Github" href="http://www.github.com/ampas/aces-dev/"><i class="fab fab-github">  </i></a>
+          <a style="max-width: 1110px; margin-right:00px;" class="w-nav-link navlink" title="YouTube" href="https://www.youtube.com/channel/UCnmCugF923ta50EFzxgQmjw"><i class="fab fa-youtube-play">  </i></a>
+          <a style="max-width: 1110px; margin-right:00px;" class="w-nav-link navlink" title="Twitter" href="https://twitter.com/academyaces">      <i class="fab fa-twitter">  </i> </a>
+          <a style="max-width: 1110px; margin-right:00px;" class="w-nav-link navlink" title="Zenodo" href="https://zenodo.org/communities/aces">      <i class="fab fa-info">  </i> </a>
+      </nav>
+      <div class="w-nav-button menubutton">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+</div>
+-->
+
+
+<script type='text/x-handlebars' data-template-name='list/topic-list-item.raw'>
+
+{{#if bulkSelectEnabled}}
+<td class='star'>
+  <input type='checkbox' class='bulk-select'>
+</td>
+{{/if}}
+
+<td class='main-link clearfix'>
+  {{raw "topic-status" topic=topic}}
+  {{topic-link topic}}
+  {{#if controller.showTopicPostBadges}}
+    {{raw "topic-post-badges" unread=topic.unread newPosts=topic.displayNewPosts unseen=topic.unseen url=topic.lastUnreadUrl}}
+  {{/if}}
+  
+  {{raw "list/topic-excerpt" topic=model}}
+  <div class='creator'>
+  {{#if showCategory}}
+     {{category-link topic.category}}
+   {{/if}}
+  {{discourse-tags topic mode="list"}}
+  <!--
+  {{~#if topic.creator ~}}
+  <a href="/users/{{topic.creator.username}}" data-auto-route="true" data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a> <a href={{topic.url}}>{{format-date topic.createdAt format="tiny"}}</a>
+  {{~/if ~}}
+   {{raw "list/action-list" topic=topic postNumbers=topic.liked_post_numbers className="likes" icon="heart"}}
+   //-->
+   </div>
+</td>
+
+{{#if controller.showLikes}}
+<td class="num likes">
+  {{number topic.like_count}} <i class='fa fa-heart'></i>
+</td>
+{{/if}}
+   
+{{#if controller.showOpLikes}}
+<td class="num likes">
+  {{number topic.op_like_count}} <i class='fa fa-heart'></i>
+</td>
+{{/if}}
+
+{{raw "list/posts-count-column" topic=topic}}
+</script>
+
+<script type='text/x-handlebars' data-template-name='topic-list-header.raw'>
+  {{#if bulkSelectEnabled}}
+  <th class='star'>
+    {{#if canBulkSelect}}
+        <button class='btn bulk-select' title='{{i18n "topics.bulk.toggle"}}'><i class='fa fa-list'></i></button>
+    {{/if}}
+  </th>
+  {{/if}}
+  {{raw "topic-list-header-column" order='default' name='topic.title' bulkSelectEnabled=bulkSelectEnabled showBulkToggle=toggleInTitle canBulkSelect=canBulkSelect}}
+  
+  {{#if showLikes}}
+     {{raw "topic-list-header-column" sortable='true' order='likes' number='true' forceName='Likes'}}
+  {{/if}}
+  {{#if showOpLikes}}
+     {{raw "topic-list-header-column" sortable='true' order='op_likes' number='true' forceName='Likes'}}
+  {{/if}}
+  {{raw "topic-list-header-column" sortable='true' number='true' order='posts' forceName='Replies'}}
+</script>
+
+<script>
+
+(function(){
+var TopicListItemView = require('discourse/components/topic-list-item').default;
+TopicListItemView.reopen({
+    showCategory: function(){
+        return !this.get('controller.hideCategory') &&
+                this.get('topic.creator') &&
+                this.get('topic.category.name') !== 'uncategorized';
+    }.property()
+});
+})();
+ 
+</script>
+
+<script type="text/x-handlebars" data-template-name="components/latest-topic-list-item">
+<!--
+<div class='topic-poster'>
+ {{#user-link user=topic.creator}}
+  {{avatar topic.creator imageSize="large"}}
+ {{/user-link}}
+</div>
+-->
+<div class='main-link'>
+ <div class='top-row'>
+  {{raw "topic-status" topic=topic}}
+  {{topic-link topic}}
+  {{#if topic.featured_link}}
+   {{topic-featured-link topic}}
+  {{/if}}
+  {{topic-post-badges newPosts=topic.totalUnread unseen=topic.unseen url=topic.lastUnreadUrl}}
+ </div>
+ <div class='bottom-row'>
+  {{category-link topic.category}}
+<!--
+  {{discourse-tags topic mode="list"}}
+-->
+
+ </div>
+</div>
+<!--
+<div class='topic-stats'>
+ {{raw "list/posts-count-column" topic=topic tagName="div"}}
+ <div class="topic-last-activity">
+  <a href="{{topic.lastPostUrl}}" title="{{topic.bumpedAtTitle}}">{{format-date topic.bumpedAt format="tiny" noTitle="true"}}</a>
+ </div>
+</div>
+-->
+</script>
+
+<script type="text/x-handlebars" data-template-name="components/categories-topic-list">
+
+
+<div class='table-heading' aria-role="heading" aria-level="2">
+  Latest Posts
+</div>
+
+{{#if topics}}
+  {{#each topics as |t|}}
+    {{latest-topic-list-item topic=t}}
+  {{/each}}
+  <div class="more-topics">
+    <a href="/{{filter}}" class="btn pull-right">{{i18n "more"}}</a>
+  </div>
+{{else}}
+  <div class='no-topics'>
+    <h3>{{i18n (concat "topics.none." filter)}}</h3>
+  </div>
+{{/if}}
+
+</script>
+

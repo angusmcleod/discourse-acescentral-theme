@@ -1,0 +1,30 @@
+{
+  "name": "aces-central-theme-light",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+    "icons-sprite": "assets/icons-sprite.svg"
+  },
+  "color_schemes": {
+    "aces_light": {
+      "primary": "646464",
+      "secondary": "fcfcfb",
+      "tertiary": "C1A138",
+      "quaternary": "C1A138",
+      "header_background": "eee",
+      "header_primary": "888",
+      "highlight": "ffff00",
+      "danger": "dd0000",
+      "success": "00cc00",
+      "love": "ff0000"
+    }
+  },
+  "modifiers": {
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}

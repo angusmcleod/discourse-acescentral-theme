@@ -1,0 +1,77 @@
+/*@font-face {
+    font-family: 'FuturaPT-Book';
+    src: url("http://community.acescentral.com/uploads/default/original/1X/d633453cd20a2fe9bb6ed0067b2188500b3562d3.otf") format("opentype");
+    font-size: 12pt;
+    font-weight: 300;
+}*/
+/*
+@font-face {
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(https://fonts.gstatic.com/s/pontanosans/v7/qFdD35GdgYR8EzR6oBLDHa3ayz8NoVgyNIjK.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+*/
+/*
+body {
+	font-family: "FuturaPT-Book","FuturaBook",Futura,"Trebuchet MS","Raleway", "Open Sans",Arial,sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+body {
+	font-family: "Pontano Sans","PontanoSans-Regular","Open Sans",Arial,sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+}
+*/
+
+.docked header.d-header {
+    background-color: #343434;
+}
+.d-header .title a, .d-header .title a:visited {
+    color: #f0f0f0;
+}
+
+
+/* banner */
+#banner {
+border-radius: 3px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+max-width: 100%;
+max-height: 100%;
+width:100%;
+height:auto;
+background: #fff;
+    /* background: #1d191a;*/
+padding: 0px;
+border: 3px;
+overflow: none;
+}
+#banner-content {
+    margin-left: -30px;
+    margin-left: 0px;
+    /*background: #1d191a url('http://community.acescentral.com/uploads/default/original/1X/cb48afe561f7f8b28f51eff6a8578cc191abe7b8.png');
+    */
+    /* background-size: 100% 100%; */
+    max-width:100%;
+    max-height:auto;
+    width:100%;
+    height:auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner-content img {
+  display: block;
+max-width: 100%;
+max-height: 100%;
+
+}
+
+.d-header-icons .hamburger-dropdown {
+    margin-right: 9px;
+}
