@@ -1,35 +1,35 @@
-#login-alert::after {
-  content: '...';
-  white-space: pre;
-  display: block;
-  margin-bottom: 10px;
-  background: #e0f5ff;
-  padding: 5px;
-  font-weight: bold;
-}
-
-.custom-header-links .headerLink a {
-    color: #ffffff !important; 
-	font-family: Oswald, sans-serif;
-	font-weight: 400;
-	font-size: 16px !important;
-	text-transform: uppercase;
-}
-
-.d-icon-search {
-    height: 1.1em;
-}
+// #login-alert::after {
+//   content: '...';
+//   white-space: pre;
+//   display: block;
+//   margin-bottom: 10px;
+//   background: #e0f5ff;
+//   padding: 5px;
+//   font-weight: bold;
+//   }
+//
+// .custom-header-links .headerLink a {
+//   color: #ffffff !important;
+//   font-family: Oswald, sans-serif;
+//   font-weight: 400;
+//   font-size: 16px !important;
+//   text-transform: uppercase;
+// }
+//
+// .d-icon-search {
+//     height: 1.1em;
+// }
 
 :root {
   --body_font: "Pontano Sans";
   --body_font_weight: 400;
-  
+
   --headline_font: "Oswald";
   --headline_font_weight: 300;
-  
+
   --monospaced_font: "Source Sans Pro";
   --monspaced_font_weight: 400;
-  
+
   --normal-font-size: "16px";
   --smaller_font_size: "15px";
   --larger_font_size: "18px";
