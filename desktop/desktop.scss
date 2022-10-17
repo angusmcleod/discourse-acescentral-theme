@@ -1,474 +1,64 @@
-/*
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
-*/
-
-/* @font-face {
-    font-family: 'FuturaPT-Book';
-    src: url("http://community.acescentral.com/uploads/default/original/1X/d633453cd20a2fe9bb6ed0067b2188500b3562d3.otf") format("opentype");
-    font-size: 12pt;
-    font-weight: 300;
-}*/
-/* latin-ext
-@font-face {
-  font-family: 'Pontano Sans';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(https://fonts.gstatic.com/s/pontanosans/v7/qFdD35GdgYR8EzR6oBLDHa3ayz8NoVgyNIjK.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/*body {
-	font-family: "FuturaPT-Book","FuturaBook",Futura,"Trebuchet MS","Raleway", "Open Sans",Arial,sans-serif;
-    font-weight: 300;
-    font-size: 12pt;
-}*/
-
-/*
-*body {
-	font-family: "Pontano Sans","PontanoSans-Regular","Open Sans",Arial,sans-serif;
-    font-weight: 400;
-    font-size: 12pt;
-}
-*/
-
 /* Attempt to match wordpress */
 
-// .d-header > .wrap {
-// 	width: calc(100% - 50px);
-// 	height: 100%;
-// 	margin-left: 12px;
-// 	margin-right: auto;
-// 	max-width: unset;
-// }
-//
-// .d-header #site-logo {
-// 	height: 3.2em;
-// }
-//
-// .d-header .logo-small {
-// 	margin-right: 20px;
-// 	width: auto;
-// 	height: auto;
-// 	max-height: 49px;
-// 	margin-left: 1px;
-// }
-//
-// // #main-outlet {
-// // 	padding-top: 2em;
-// // }
-//
-// .d-header-icons .d-icon {
-// 	width: 100%;
-// 	font-size: 1.2em;
-// 	line-height: 1.4;
-// 	display: inline-block;
-// 	color: #ffffff;
-// 	// color: #dbdbdb;
-// }
-//
-// .docked header.d-header {
-// 	border-top: 4px solid #c1a138;
-// }
-//
-// .extra-info-wrapper .topic-link {
-// 	color: #ccc;
-// 	white-space: nowrap;
-// }
-//
-// .d-header-icons .hamburger-dropdown {
-//     margin-right: 9px;
-// }
-//
-// /* End attempt */
-//
-// .cooked, .d-editor-preview {
-// 	word-wrap: break-word;
-// 	line-height: 1.45;
-// 	letter-spacing: 0.01em;
-// 	word-spacing: 10%;
-// 	hyphens: auto;
-// }
-//
-// h1 {
-// 	font-size: 2em;
-// 	letter-spacing: 0.01em;
-// 	word-spacing: 10%;
-// }
-//
-// #topic-title h1 {
-// 	line-height: normal;
-// }
-//
-// .d-header {
-// 	height: 91px;
-//     background-color: #343434;
-// }
-// .d-header .icons .icon {
-//     color: #888;
-//     cursor: pointer;
-// }
-// .d-header-icons .icon:hover, .d-header-icons .icon:focus {
-//     background-color: #343434;
-//     border-top: 1px solid transparent;
-//     border-left: 1px solid transparent;
-//     border-right: 1px solid transparent;
-// }
-// .d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon {
-//     color: #c69e27;
-// }
-//
-// /* banner */
-// #banner {
-//     padding: 0px;
-//     border-radius: 3px;
-//     width: 980px;
-//     /* height: 780px;*/
-//     height: 540px;
-//     max-width: 980px;
-//     /*max-height: 790px;*/
-//     max-height: 540px;
-//     background-position: top ;
-//     background: #fff;
-//     border: 4px;
-//     overflow: none;
-// }
-// #banner-content {
-//     /*
-//     background: #1d191a url('http://community.acescentral.com/uploads/default/original/1X/14c7b5d4496a91546d2bf8b96e4d144b90add990.png');
-//    */
-//     /*height:100%;*/
-//     /*width: 100%;*/
-//     padding: 20px;
-//     margin: 20px;
-//     border: 3px;
-//     width:  980;
-//     height: 500px;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//
-// }
-//
-// /* category list header */
-// .topic-list th, .topic-list td {
-//     padding: 12px 5px;
-//     font-size: 12pt;
-//     color: #777;
-// }
-// /* category titles */
-// .topic-list.categories .category h3 a[href] {
-//     font-size: 12pt;
-//     color: #222;
-//     text-transform: uppercase;
-// }
-// /*category text */
-// body .topic-list.categories .category .category-description {
-//     color: #777;
-//     font-size: 12pt;
-// }
-// .badge-wrapper.bullet span.badge-category {
-//     font-size: 12pt;
-//     font-weight: 300;
-//     color: #777;
-//     display: inline-block;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//             width: 200px;
-// }
-// .badge-wrapper.bullet span.badge-category {
-//     color: #777 !important;
-// }
-//
-//
-//
-// /*category box */
-// .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {
-//     width: 6px;
-//     height: 6px;
-//     margin-right: 4px;
-//     display: inline-block;
-//     line-height: 1;
-//     border-radius: 2px;
-//     transform: translateY(-3px);
-// }
-// .list-controls .category-breadcrumb li.bullet > .badge-category .badge-category-bg {
-//     width: 10px;
-//     height: 18px;
-//     display: inline-block;
-//     border-radius: 2px;
-//     transform: translateY(1px);
-// }
-//
-// /*category bar */
-// .list-controls {
-//     text-transform: uppercase;
-//     font-size: 12pt;
-//     background: #fcfcfb;
-//         height: 30px;
-// }
-//
-// .list-controls ol.category-breadcrumb {
-//     margin-right: 0px;
-// }
-// .list-controls  ol.category-breadcrumb li {
-//     margin-right: 0px;
-// }
-// .list-controls .category-breadcrumb a.badge-category {
-//     display: inline-block;
-//     padding: 5px 3px;
-// }
-// .list-controls .category-breadcrumb li.bullet > .badge-category {
-//     background: #fcfcfb !important;
-// }
-// .list-controls .category-breadcrumb a.badge-category.category-dropdown-button .fa-caret-right {
-//     margin-left: 0px;
-//     margin-top: -3px;
-//     margin-bottom: -2px;
-// }
-// .list-controls .category-breadcrumb a.badge-category.category-dropdown-button .fa-caret-down {
-//     margin-left: -3px;
-//     margin-top: -3px;
-//     margin-bottom: -2px;
-// }
-//
-// .list-controls .nav {
-//     float: center;
-//     margin-bottom: 18px;
-// }
-// .list-controls .category-breadcrumb a.badge-category.category-dropdown-button {
-//     margin-left: -4px;
-//     padding-left: 0px;
-//     width: 13px;
-// }
-// .nav-pills, .nav-stacked {
-//     box-sizing: content-box;
-//     margin-left: 100;
-//     list-style: none;
-//     font-size: 12pt;
-//     background: #fcfcfb !important;
-//     margin-left: 0px;
-//     list-style: none;
-//     list-style-type: none;
-//     list-style-image: none;
-//     list-style-position: outside;
-// }
-// .nav-pills ul, ol, dd {
-//     margin: 0 0px 0px 15px;
-//     padding: 0;
-// }
-// .nav-pills > li > a{
-//     border: 1px solid #fcfcfb;
-//     border-radius: 2px;
-//     line-height: 2px;
-// }
-// .nav-pills > li.active > a, .nav-pills > li > a.active {
-//     color: #666;
-//     background-color: #eee;
-//     border: 1px solid #ddd;
-//     border-radius: 2px;
-//     height: 20px;
-// }
-// .nav-pills > li > a:hover {
-//     color: #fcfcfb;
-//     background-color: #aaa;
-//     border: 1px solid #ddd;
-//     border-radius: 2px;
-//     height: 20px;
-// }
-//
-// /* all categories dropdown */
-// .list-controls .category-dropdown-menu {
-//     width: 180px;
-//     position: absolute;
-//     border: 1px solid #ddd;
-//     background-color: #fcfcfb;
-//     z-index: 100;
-//     max-height: 750px;
-//     min-height: 300px;
-//     min-width: 180px;
-//     text-transform: capitalize;
-// }
-// .list-controls .category-dropdown-menu .badge-wrapper.bullet .badge-category {
-//     max-width: 180px;
-// }
-// /*latest list */
-// .topic-list.categories a.title {
-//     color: #c69e27;
-//     font-size: 12pt;
-//     text-transform: capitalize;
-// }
-//
-// /*latest list - thumb tack */
-// .topic-list.categories .featured-topic i {
-//     color: #AEAEAE !important;
-//     font-size: 12px;
-//     color: #444;
-// }
-//
-// /* right side new topic and menu */
-// .list-controls .btn {
-//     font-size: 12pt;
-//     border-radius: 2px;
-//     border: 1px solid #ddd;
-//         height: 32px;
-// }
-// .category-notification-menu .dropdown-menu {
-//     font-size: 12pt;
-// }
-//
-// /* header animation */
-// //.d-header #site-logo { opacity: 0; }
-// .docked .d-header #site-logo { opacity: 1.0; }
-// .docked header.d-header {
-//     background-color: #343434;
-// }
-//
-// .d-header .title a, .d-header .title a:visited {
-//     color: #f0f0f0;
-// }
-//
-// header.d-header {
-//     -webkit-transition: background 0.5s linear, color 0.3s linear;
-//     -moz-transition: background 0.5s linear, color 0.3s linear;
-//     -ms-transition: background 0.5s linear, color 0.3s linear;
-//     -o-transition: background 0.5s linear, color 0.3s linear;
-//     transition: background 0.5s linear, color 0.3s linear; }
-//
-// header.d-header  #site-logo  {
-//     -webkit-transition: opacity 0.5s linear, color 0.3s linear;
-//     -moz-transition: opacity 0.5s linear, color 0.3s linear;
-//     -ms-transition: opacity 0.5s linear, color 0.3s linear;
-//     -o-transition: opacity 0.5s linear, color 0.3s linear;
-//     transition: opacity 0.5s linear, color 0.3s linear;
-// }
-
-/*logo small */
-// .logo-small {
-//     margin-right: 18px;
-//     width: auto;
-//     height: auto;
-//     max-height: 40px;
-// }
-
-
-/* inside topic, scrolled down, placement of tags/categories in the header */
-// .extra-info-wrapper .badge-wrapper.bullet {
-//     margin-top: -1px;
-// }
-
-/* --------------------------------------------------------------------*/
-// .topic-list.categories .category h3 {
-//     display: inline-block;
-//     font-size: 1.286em;
-// }
-
-/*
-body input, body button, body select, body textarea {
-    font-family:  "Pontano Sans","PontanoSans-Regular","Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-}
-h1 {
-	font-family: "Oswald","Open Sans", sans-serif;
-    font-weight: 300;
-	font-variant: bold;
+// Vertical size
+.d-header {
+	height: 91px;
 }
 
-h2 {
-	font-family: "Oswald","Open Sans", sans-serif;
-	font-variant: bold;
+// Header element horizontal positioning
+.d-header > .wrap {
+	width: calc(100% - 50px);
+	height: 100%;
+	margin-left: 12px;
+	margin-right: auto;
+	max-width: unset;
 }
 
-h3 {
-	font-family: "Oswald","Open Sans", sans-serif;
-	font-variant: bold;
-	letter-spacing: -0.02em;
+// Small logo size and spacing
+.d-header .logo-small {
+    height: 49px !important;
+    margin-left: 1px;
 }
 
-p {
-	font-family: "Pontano Sans","PontanoSans-Regular","Open Sans", sans-serif;
+// Hamburger and Search size and color
+.d-header-icons .d-icon {
+	font-size: 1.2em;
 }
 
-blockquote {
-	font-family: "Pontano Sans","PontanoSans-Regular","Open Sans", sans-serif;
+// Gold bar above header
+.docked header.d-header {
+	border-top: 4px solid #c1a138;
 }
 
-pre {
-	font-family: "Pontano Sans","PontanoSans-Regular","Open Sans", sans-serif;
-}
-/*
-
-/*
-body input, body button, body select, body textarea {
-    font-family:  'FuturaBook',Futura,"Raleway", "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-h1 {
-	font-family: 'FuturaBook',Futura,"Raleway","Open Sans", sans-serif;
-    font-weight: 400;
-	font-variant: bold;
+.extra-info-wrapper .topic-link {
+	color: #ccc;
+	white-space: nowrap;
 }
 
-h2 {
-	font-family: 'FuturaBook',Futura,"Raleway","Open Sans", sans-serif;
-	font-variant: bold;
+.d-header-icons .hamburger-dropdown {
+    margin-right: 9px;
 }
 
-h3 {
-	font-family: 'FuturaBook',Futura,"Raleway","Open Sans", sans-serif;
-	font-variant: bold;
-	letter-spacing: -0.02em;
+.d-header .icons .icon {
+    color: #888;
+    cursor: pointer;
 }
 
-p {
-	font-family: 'FuturaBook',Futura,"Raleway","Open Sans", sans-serif;
+.d-header-icons .icon:hover, .d-header-icons .icon:focus {
+    background-color: #343434;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
-blockquote {
-	font-family: 'FuturaBook',Futura,"Raleway","Open Sans", sans-serif;
+.d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon {
+    color: #c69e27;
 }
 
-pre {
-	font-family: 'FuturaBook',Futura,"Raleway","Open Sans", sans-serif;
+/* End attempt */
+
+// Increase width of lastest posts column
+.latest-topic-list-item .main-link {
+	max-width: 100%;
+	white-space: nowrap;
 }
-*/
-
-
-/* main page latest item length */
-// .latest-topic-list-item .main-link {
-//     flex: 0 1 auto;
-//     max-width: 100%;
-//
-//
-// }
-// .latest-topic-list-item .main-link .top-row {
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-// }
-// .latest-topic-list-item {
-//     border-bottom: 1px solid #ddd;
-// }
-// tr {
-//     border-bottom: 1px solid #ddd;
-// }
-// .topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title {
-//     color: #333;
-// }
-
-
-
-/* tag styling */
-// .discourse-tag.box {
-//     background-color: #f0f0f0;
-//     color: #939393;
-//     padding: 2px 8px;
-//     border-radius: 5px;
-//     margin:1px;
-// }
-// .extra-info-wrapper .discourse-tag.box {
-//     background-color: #555;
-//     color: #c4c4c4;
-//     line-height: 1.5;
-// }

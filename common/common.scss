@@ -1,74 +1,30 @@
-// #login-alert::after {
-//   content: '...';
-//   white-space: pre;
-//   display: block;
-//   margin-bottom: 10px;
-//   background: #e0f5ff;
-//   padding: 5px;
-//   font-weight: bold;
-//   }
-//
-// .custom-header-links .headerLink a {
-//   color: #ffffff !important;
-//   font-family: Oswald, sans-serif;
-//   font-weight: 400;
-//   font-size: 16px !important;
-//   text-transform: uppercase;
-// }
-//
-// .d-icon-search {
-//     height: 1.1em;
-// }
-
-:root {
-  --body_font: "Pontano Sans";
-  --body_font_weight: 400;
-
-  --headline_font: "Oswald";
-  --headline_font_weight: 300;
-
-  --monospaced_font: "Source Sans Pro";
-  --monspaced_font_weight: 400;
-
-  --normal-font-size: "16px";
-  --smaller_font_size: "15px";
-  --larger_font_size: "18px";
-  --largest_font_size: "20px";
+.category-list .category-name {
+    font-weight: bolder;
 }
 
-
-html {
-  font-family: var(--body_font) !important;
-  font-weight: var(--body_font_weight);
-  font-size: var(--normal-font-size);
-
-  &.text-size-smaller {
-    font-size: var(--smaller-font-size);
-  }
-
-  &.text-size-larger {
-    font-size: var(--larger-font-size);
-  }
-
-  &.text-size-largest {
-    font-size: var(--largest-font-size);
-  }
+.d-header-icons .d-icon {
+	width: 100%;
+	line-height: 1.4;
+	display: inline-block;
+	color: var(--secondary);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--headline_font);
-  font-weight: var(--headline_font_weight);
+// Adjust logo size and spacing
+.d-header #site-logo {
+	height: 3.2em;
 }
 
-pre,
-code,
-kbd,
-samp,
-.modal.history-modal.markdown {
-  font-family: var(--monospaced_font);
-  font-weight: var(--monospaced_font_weight);
+.d-header .logo-small {
+	margin-right: 20px;
+}
+
+// Adjust size of category list bullets
+.badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {
+	width: 6px;
+	height: 6px;
+	margin-right: 4px;
+	display: inline-block;
+	line-height: 1;
+	border-radius: 2px;
+	transform: translateY(-3px);
 }

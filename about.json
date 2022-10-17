@@ -11,17 +11,17 @@
     "icons-sprite": "assets/icons-sprite.svg"
   },
   "color_schemes": {
-    "aces_light": {
-      "primary": "646464",
-      "secondary": "fcfcfb",
-      "tertiary": "C1A138",
-      "quaternary": "C1A138",
-      "header_background": "eee",
-      "header_primary": "888",
-      "highlight": "ffff00",
-      "danger": "dd0000",
-      "success": "00cc00",
-      "love": "ff0000"
+    "aces_test": {
+        "primary": "646464",
+        "secondary": "fcfcfb",
+        "tertiary": "C1A138",
+        "quaternary": "C1A138",
+        "header_background": "FFFFFF",
+        "header_primary": "333333",
+        "highlight": "ffff00",
+        "danger": "dd0000",
+        "success": "00cc00",
+        "love": "ff0000"
     }
   },
   "modifiers": {
