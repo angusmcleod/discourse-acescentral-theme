@@ -6,10 +6,7 @@
 	width: 100%;
 	line-height: 1.4;
 	display: inline-block;
-	color: var(--secondary);
-	@media (prefers-color-scheme: dark) {
-      color: var(--secondary-low);
-  }
+	color: var(--custom-header-icons);
 }
 
 // Adjust logo size and spacing
