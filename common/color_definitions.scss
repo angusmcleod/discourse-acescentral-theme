@@ -1,0 +1,8 @@
+$dark-theme-header-icons: #bcbfca;
+$light-theme-header-icons: #fcfcfb;
+
+$header-icons: dark-light-choose($light-theme-header-icons, $dark-theme-header-icons);
+
+:root {
+  --custom-header-icons: #{$header-icons};
+}
