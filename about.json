@@ -1,9 +1,9 @@
 {
-  "name": "aces-central-theme-light",
+  "name": "ACESCentral Theme",
   "component": false,
   "license_url": null,
   "about_url": null,
-  "authors": null,
+  "authors": "Alex Forsythe",
   "theme_version": null,
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
@@ -11,7 +11,7 @@
     "icons-sprite": "assets/icons-sprite.svg"
   },
   "color_schemes": {
-    "aces_light_mode": {
+    "ACESCentral Light Mode": {
         "primary": "646464",
         "secondary": "fcfcfb",
         "tertiary": "C1A138",
@@ -22,8 +22,32 @@
         "danger": "dd0000",
         "success": "00cc00",
         "love": "ff0000"
-    }
-  },
+        },
+    "ACESCentral Dark Mode": {
+        "primary": "e2e2e2",
+        "secondary": "2F333D",
+        "tertiary": "c1a138",
+        "quaternary": "c1a138",
+        "header_background": "1d2025",
+        "header_primary": "e2e2e2",
+        "highlight": "ffff00",
+        "danger": "ff0000",
+        "success": "00cc00",
+        "love": "ff0000"
+        },
+    "ACESCentral Extra Dark Mode": {
+        "primary": "e2e2e2",
+        "secondary": "0f0f0f",
+        "tertiary": "c1a138",
+        "quaternary": "c1a138",
+        "header_background": "333333",
+        "header_primary": "e2e2e2",
+        "highlight": "ffff00",
+        "danger": "ff0000",
+        "success": "00cc00",
+        "love": "ff0000"
+        }
+    },
   "modifiers": {
   },
   "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
