@@ -11,7 +11,7 @@
     "icons-sprite": "assets/icons-sprite.svg"
   },
   "color_schemes": {
-    "aces_test": {
+    "aces_light_mode": {
         "primary": "646464",
         "secondary": "fcfcfb",
         "tertiary": "C1A138",
