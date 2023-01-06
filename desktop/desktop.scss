@@ -62,3 +62,36 @@
 	max-width: 100%;
 	white-space: nowrap;
 }
+
+// Adjust full screen chat appearance
+
+.full-page-chat .chat-full-page-header {
+	background: var(--primary-very-low);
+	border: 0px;
+	margin-right: -11px;
+}
+
+.has-full-page-chat:not(.discourse-sidebar) .full-page-chat .channels-list {
+    boarder: 0px;
+    margin-left: -11px;
+}
+
+.chat-full-page-header .chat-channel-title .d-icon:not(.d-icon-lock) {
+	color: var(--quaternary);
+}
+
+.chat-channel-title__category-badge {
+	color: var(--quaternary);
+}
+
+.fa.d-icon.d-icon-hashtag.svg-icon.svg-string {
+	color: var(--quaternary);
+}
+
+.has-full-page-chat:not(.discourse-sidebar) {
+	--max-chat-width: 2000px;
+	--d-max-width: 2000px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
