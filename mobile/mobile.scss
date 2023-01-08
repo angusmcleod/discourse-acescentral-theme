@@ -8,8 +8,28 @@
 	font-size: 1.2em;
 }
 
+// Full logo
+.d-header #site-logo {
+	height: auto;
+	width: auto;
+	max-height: 2rem;
+	max-width: 100%;
+}
+
 // Small logo size and spacing
 .d-header .logo-small {
-    height: 36px !important;
-    margin-left: 1px;
+    height: auto;
+}
+
+// Chat appearance
+.chat-full-page-header .chat-channel-title .d-icon:not(.d-icon-lock) {
+	color: var(--quaternary);
+}
+
+.chat-channel-title__category-badge {
+	color: var(--quaternary);
+}
+
+.fa.d-icon.d-icon-hashtag.svg-icon.svg-string {
+	color: var(--quaternary);
 }
