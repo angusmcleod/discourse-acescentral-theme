@@ -28,3 +28,11 @@
 	border-radius: 2px;
 	transform: translateY(-3px);
 }
+
+// improve rendering of "inline code" markup
+p > code, li > code, pre {
+	margin: 0px 2px 0px 2px;
+	padding: 0px 5px 0px 5px;
+	background: var(--primary-very-low);
+	border-radius: 5px;
+}
